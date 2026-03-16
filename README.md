@@ -2,8 +2,6 @@
 
 一个用于网络诊断的 Flutter 插件，提供网速测试、DNS测试、Ping测试和网络质量评估等功能。
 
-[English Documentation](README_EN.md)
-
 ## 功能特性
 
 - 🌐 **网络连接检测** - 检测网络连通性和类型
