@@ -26,8 +26,11 @@ COMMIT_PLAN.md
 *.log
 *.tmp
 
-# Example app
-example/
+# Example build artifacts (keep example source, exclude build)
+example/.dart_tool/
+example/build/
+example/.packages
+example/pubspec.lock
 
-# Benchmark
+# Standalone benchmark script only (not the library code)
 benchmark/
