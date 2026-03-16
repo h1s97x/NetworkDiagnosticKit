@@ -4,6 +4,7 @@ version: 1.0.3
 homepage: https://github.com/h1s97x/NetworkDiagnosticKit
 repository: https://github.com/h1s97x/NetworkDiagnosticKit
 issue_tracker: https://github.com/h1s97x/NetworkDiagnosticKit/issues
+documentation: https://pub.dev/documentation/network_diagnostic_kit/latest/
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -20,6 +21,8 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+
+publish_to: https://pub.dev
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

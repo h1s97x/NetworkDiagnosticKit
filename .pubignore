@@ -14,11 +14,6 @@ coverage/
 test/
 *_test.dart
 
-# Documentation
-doc/
-CONTRIBUTING.md
-COMMIT_PLAN.md
-
 # CI/CD
 .github/
 
@@ -26,11 +21,16 @@ COMMIT_PLAN.md
 *.log
 *.tmp
 
-# Example build artifacts (keep example source, exclude build)
+# Example build artifacts only (keep example source)
 example/.dart_tool/
 example/build/
 example/.packages
-example/pubspec.lock
 
-# Standalone benchmark script only (not the library code)
-benchmark/
+# Standalone benchmark script only (root level)
+/benchmark/
+
+# Documentation (keep in repo, exclude from pub)
+doc/
+CONTRIBUTING.md
+COMMIT_PLAN.md
+
