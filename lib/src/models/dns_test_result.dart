@@ -1,4 +1,33 @@
-/// DNS测试结果
+/// DNS 测试结果
+///
+/// 包含 DNS 解析测试的详细结果，包括解析成功/失败、响应时间和解析的 IP 地址。
+///
+/// ## 属性
+///
+/// - [domain]: 被解析的域名
+/// - [dnsServer]: 使用的 DNS 服务器地址
+/// - [resolvedIp]: 解析得到的 IP 地址（成功时）
+/// - [responseTime]: DNS 响应时间 (毫秒)
+/// - [isSuccess]: 解析是否成功
+/// - [errorMessage]: 错误信息（失败时）
+///
+/// ## 示例
+///
+/// ```dart
+/// final results = await NetworkDiagnostic.testDns(
+///   domain: 'www.google.com',
+///   dnsServers: ['8.8.8.8', '114.114.114.114'],
+/// );
+/// for (var result in results) {
+///   print('DNS ${result.dnsServer}:');
+///   print('  响应时间: ${result.responseTime}ms');
+///   if (result.isSuccess) {
+///     print('  解析 IP: ${result.resolvedIp}');
+///   } else {
+///     print('  错误: ${result.errorMessage}');
+///   }
+/// }
+/// ```
 class DnsTestResult {
   DnsTestResult({
     required this.domain,

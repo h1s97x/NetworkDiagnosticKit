@@ -14,6 +14,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+### [1.0.2] - 2026-03-16
+
+#### Added
+
+- 📚 Complete Dartdoc annotation documentation
+- 📖 Library-level documentation notes
+- 📝 Detailed class-level documentation
+- 🔍 Full method-level documentation
+- 💡 Property-level documentation notes
+- 📋 Usage examples and code snippets
+
+#### Documentation
+
+- Added Dartdoc annotations for all public APIs
+- Added detailed documentation for all data models
+- Added descriptions for all enumeration types
+- Added documentation for exception classes
+- Added documentation for benchmarking classes
+- Included usage examples and best practices
+
 ### [1.0.1] - 2026-03-08
 
 #### Added
@@ -87,6 +107,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 格式基于 [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)，
 本项目遵循 [语义化版本](https://semver.org/spec/v2.0.0.html)。
+
+### [1.0.2] - 2026-03-16
+
+#### 新增
+
+- 📚 完整的 Dartdoc 文档注释
+- 📖 库级别文档说明
+- 📝 类级别详细文档
+- 🔍 方法级别完整文档
+- 💡 属性级别文档说明
+- 📋 使用示例和代码片段
+
+#### 文档
+
+- 为所有公共 API 添加 Dartdoc 注释
+- 为所有数据模型添加详细文档
+- 为所有枚举类型添加说明
+- 为异常类添加文档
+- 为基准测试类添加文档
+- 添加使用示例和最佳实践
 
 ### [1.0.1] - 2026-03-08
 

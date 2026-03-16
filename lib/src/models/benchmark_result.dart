@@ -1,4 +1,33 @@
-/// Benchmark result model
+/// 基准测试结果
+///
+/// 包含单个基准测试的详细性能数据，包括迭代次数、耗时统计和每秒操作数。
+///
+/// ## 属性
+///
+/// - [testName]: 测试名称
+/// - [iterations]: 迭代次数
+/// - [totalDuration]: 总耗时 (毫秒)
+/// - [averageDuration]: 平均耗时 (毫秒)
+/// - [minDuration]: 最小耗时 (毫秒)
+/// - [maxDuration]: 最大耗时 (毫秒)
+/// - [standardDeviation]: 标准差
+/// - [operationsPerSecond]: 每秒操作数 (ops/sec)
+/// - [timestamp]: 测试执行时间
+/// - [metadata]: 附加元数据
+///
+/// ## 示例
+///
+/// ```dart
+/// final result = await BenchmarkRunner.run(
+///   testName: 'Connection Check',
+///   test: () => NetworkDiagnostic.checkConnection(),
+///   iterations: 100,
+/// );
+/// print('测试: ${result.testName}');
+/// print('迭代: ${result.iterations}');
+/// print('平均耗时: ${result.averageDuration.toStringAsFixed(2)}ms');
+/// print('操作/秒: ${result.operationsPerSecond.toStringAsFixed(2)}');
+/// ```
 class BenchmarkResult {
   /// Constructor
   const BenchmarkResult({
@@ -14,37 +43,37 @@ class BenchmarkResult {
     this.metadata,
   });
 
-  /// Test name
+  /// 测试名称
   final String testName;
 
-  /// Number of iterations
+  /// 迭代次数
   final int iterations;
 
-  /// Total duration in milliseconds
+  /// 总耗时 (毫秒)
   final int totalDuration;
 
-  /// Average duration per iteration in milliseconds
+  /// 平均耗时 (毫秒)
   final double averageDuration;
 
-  /// Minimum duration in milliseconds
+  /// 最小耗时 (毫秒)
   final int minDuration;
 
-  /// Maximum duration in milliseconds
+  /// 最大耗时 (毫秒)
   final int maxDuration;
 
-  /// Standard deviation
+  /// 标准差
   final double standardDeviation;
 
-  /// Operations per second
+  /// 每秒操作数
   final double operationsPerSecond;
 
-  /// Timestamp when benchmark was run
+  /// 测试执行时间
   final DateTime timestamp;
 
-  /// Additional metadata
+  /// 附加元数据
   final Map<String, dynamic>? metadata;
 
-  /// Convert to JSON
+  /// 转换为 JSON
   Map<String, dynamic> toJson() => {
         'testName': testName,
         'iterations': iterations,

@@ -1,6 +1,33 @@
 import '../enums/network_type.dart';
 
 /// 网络连接信息
+///
+/// 包含当前网络连接的详细信息，包括连接状态、网络类型、IP 地址等。
+///
+/// ## 属性
+///
+/// - [isConnected]: 是否已连接到网络
+/// - [type]: 网络类型（WiFi、移动网络、以太网等）
+/// - [ssid]: WiFi 名称（仅 WiFi 连接时有效）
+/// - [signalStrength]: 信号强度百分比 (0-100)
+/// - [ipAddress]: IPv4 地址
+/// - [gateway]: 网关地址
+/// - [ipv6Address]: IPv6 地址
+/// - [macAddress]: MAC 地址
+///
+/// ## 示例
+///
+/// ```dart
+/// final connection = await NetworkDiagnostic.checkConnection();
+/// if (connection.isConnected) {
+///   print('网络类型: ${connection.type.displayName}');
+///   print('IP 地址: ${connection.ipAddress}');
+///   if (connection.type == NetworkType.wifi) {
+///     print('WiFi 名称: ${connection.ssid}');
+///     print('信号强度: ${connection.signalStrength}%');
+///   }
+/// }
+/// ```
 class NetworkConnectionInfo {
   NetworkConnectionInfo({
     required this.isConnected,

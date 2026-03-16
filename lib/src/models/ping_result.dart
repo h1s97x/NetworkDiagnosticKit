@@ -1,4 +1,31 @@
-/// Ping测试结果
+/// Ping 测试结果
+///
+/// 包含 Ping 测试的详细结果，包括发送/接收包数、延迟统计等。
+///
+/// ## 属性
+///
+/// - [host]: 目标主机地址
+/// - [sent]: 发送的 Ping 包数量
+/// - [received]: 成功接收的包数量
+/// - [lost]: 丢失的包数量
+/// - [packetLoss]: 丢包率百分比 (0-100)
+/// - [minTime]: 最小延迟 (毫秒)
+/// - [maxTime]: 最大延迟 (毫秒)
+/// - [averageTime]: 平均延迟 (毫秒)
+/// - [times]: 每次 Ping 的延迟列表 (毫秒)
+///
+/// ## 示例
+///
+/// ```dart
+/// final result = await NetworkDiagnostic.ping(
+///   host: 'www.baidu.com',
+///   count: 10,
+/// );
+/// print('目标: ${result.host}');
+/// print('发送: ${result.sent}, 接收: ${result.received}, 丢失: ${result.lost}');
+/// print('延迟: 最小=${result.minTime}ms, 最大=${result.maxTime}ms, 平均=${result.averageTime}ms');
+/// print('丢包率: ${result.packetLoss.toStringAsFixed(1)}%');
+/// ```
 class PingResult {
   PingResult({
     required this.host,
