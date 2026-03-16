@@ -14,6 +14,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+### [1.0.3] - 2026-03-16
+
+#### Fixed
+
+- 🔧 Fixed pub.dev publishing configuration
+- 📦 Updated .pubignore to include lib/src/benchmark source files
+- 📚 Included example application in published package
+- 🐛 Fixed connectivity_plus v7.0.0+ compatibility issue
+- ✅ Verified with pub.dev dry-run (0 warnings)
+
+#### Documentation
+
+- 📖 Updated README with latest features
+- 📝 Updated CHANGELOG with v1.0.3 release notes
+- 🔍 Verified all Dartdoc comments are complete
+- ✨ Ensured example application is properly documented
+
 ### [1.0.2] - 2026-03-16
 
 #### Added
@@ -107,6 +124,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 格式基于 [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)，
 本项目遵循 [语义化版本](https://semver.org/spec/v2.0.0.html)。
+
+### [1.0.3] - 2026-03-16
+
+#### 修复
+
+- 🔧 修复 pub.dev 发布配置
+- 📦 更新 .pubignore 以包含 lib/src/benchmark 源文件
+- 📚 在发布包中包含示例应用
+- 🐛 修复 connectivity_plus v7.0.0+ 兼容性问题
+- ✅ 通过 pub.dev 干运行验证（0 个警告）
+
+#### 文档
+
+- 📖 更新 README 包含最新功能
+- 📝 更新 CHANGELOG 记录 v1.0.3 发布说明
+- 🔍 验证所有 Dartdoc 注释完整
+- ✨ 确保示例应用文档完整
 
 ### [1.0.2] - 2026-03-16
 

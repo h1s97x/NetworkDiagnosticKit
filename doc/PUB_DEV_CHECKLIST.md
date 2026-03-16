@@ -1,15 +1,15 @@
 # Pub.dev 发布检查清单
 
 **检查日期**: 2026-03-16  
-**项目版本**: 1.0.1  
-**检查状态**: ✅ 已完成
+**项目版本**: 1.0.3  
+**检查状态**: ✅ 已完成并发布
 
 ---
 
 ## 项目信息
 
 - [x] 项目名称: `network_diagnostic_kit` ✅
-- [x] 版本: `1.0.1` ✅ (pubspec.yaml 已验证)
+- [x] 版本: `1.0.3` ✅ (pubspec.yaml 已验证)
 - [x] 描述: 完整且清晰 ✅
   - 描述: "A Flutter plugin for network diagnostics including speed test, DNS test, ping, and quality evaluation."
 - [x] 主页: https://github.com/h1s97x/NetworkDiagnosticKit ✅
