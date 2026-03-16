@@ -1,6 +1,6 @@
 name: network_diagnostic_kit
 description: A Flutter plugin for network diagnostics including speed test, DNS test, ping, and quality evaluation.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/h1s97x/NetworkDiagnosticKit
 
 environment:
