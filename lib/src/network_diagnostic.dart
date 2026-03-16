@@ -88,14 +88,14 @@ class NetworkDiagnostic {
 
       NetworkType type = NetworkType.none;
 
-      // 处理单个ConnectivityResult
-      if (connectivityResult == ConnectivityResult.wifi) {
+      // 处理ConnectivityResult列表（connectivity_plus v7.0.0+返回列表）
+      if (connectivityResult.contains(ConnectivityResult.wifi)) {
         type = NetworkType.wifi;
-      } else if (connectivityResult == ConnectivityResult.mobile) {
+      } else if (connectivityResult.contains(ConnectivityResult.mobile)) {
         type = NetworkType.mobile;
-      } else if (connectivityResult == ConnectivityResult.ethernet) {
+      } else if (connectivityResult.contains(ConnectivityResult.ethernet)) {
         type = NetworkType.ethernet;
-      } else if (connectivityResult == ConnectivityResult.none) {
+      } else if (connectivityResult.contains(ConnectivityResult.none)) {
         type = NetworkType.none;
       } else {
         type = NetworkType.unknown;
