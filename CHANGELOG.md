@@ -14,6 +14,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+### [1.0.4] - 2026-03-16
+
+#### Fixed
+
+- 🔧 Fixed .pubignore configuration to correctly include lib/src/benchmark files
+- 📦 Changed benchmark/ pattern to /benchmark/ to only exclude root-level benchmark folder
+- ✅ Verified lib/src/benchmark source files are included in published package
+- 📊 Package size: 93 KB (includes all benchmark source files)
+
+#### Documentation
+
+- 📖 Updated .pubignore with correct path patterns
+- 🔍 Verified all source files are properly included in pub.dev package
+
 ### [1.0.3] - 2026-03-16
 
 #### Fixed
@@ -124,6 +138,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 格式基于 [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)，
 本项目遵循 [语义化版本](https://semver.org/spec/v2.0.0.html)。
+
+### [1.0.4] - 2026-03-16
+
+#### 修复
+
+- 🔧 修复 .pubignore 配置以正确包含 lib/src/benchmark 文件
+- 📦 将 benchmark/ 模式改为 /benchmark/ 仅排除根目录 benchmark 文件夹
+- ✅ 验证 lib/src/benchmark 源文件已包含在发布包中
+- 📊 包大小：93 KB（包含所有 benchmark 源文件）
+
+#### 文档
+
+- 📖 更新 .pubignore 使用正确的路径模式
+- 🔍 验证所有源文件已正确包含在 pub.dev 包中
 
 ### [1.0.3] - 2026-03-16
 
