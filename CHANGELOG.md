@@ -14,243 +14,182 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+### [1.0.5] - 2026-03-29
+
+#### Fixed
+
+- Fixed Android plugin loading error caused by incorrect package name configuration
+- Updated Android package from `com.example.network_diagnostic_kit` to `dev.fluttercommunity.network_diagnostic_kit`
+- Implemented complete Android native plugin with full network diagnostic support
+- Fixed missing Android plugin class implementation
+- Updated test files to match new package structure
+
 ### [1.0.4] - 2026-03-16
 
-#### Fixed
-
-- 🔧 Fixed .pubignore configuration to correctly include lib/src/benchmark files
-- 📦 Changed benchmark/ pattern to /benchmark/ to only exclude root-level benchmark folder
-- ✅ Verified lib/src/benchmark source files are included in published package
-- 📊 Package size: 93 KB (includes all benchmark source files)
-
-#### Documentation
-
-- 📖 Updated .pubignore with correct path patterns
-- 🔍 Verified all source files are properly included in pub.dev package
-
-### [1.0.3] - 2026-03-16
-
-#### Fixed
-
-- 🔧 Fixed pub.dev publishing configuration
-- 📦 Updated .pubignore to include lib/src/benchmark source files
-- 📚 Included example application in published package
-- 🐛 Fixed connectivity_plus v7.0.0+ compatibility issue
-- ✅ Verified with pub.dev dry-run (0 warnings)
-
-#### Documentation
-
-- 📖 Updated README with latest features
-- 📝 Updated CHANGELOG with v1.0.3 release notes
-- 🔍 Verified all Dartdoc comments are complete
-- ✨ Ensured example application is properly documented
-
-### [1.0.2] - 2026-03-16
-
 #### Added
 
-- 📚 Complete Dartdoc annotation documentation
-- 📖 Library-level documentation notes
-- 📝 Detailed class-level documentation
-- 🔍 Full method-level documentation
-- 💡 Property-level documentation notes
-- 📋 Usage examples and code snippets
+- Complete dartdoc documentation for all public APIs
+- Comprehensive documentation for all diagnostic features
+- Usage examples in API documentation
+- Pub.dev release checklist and summary documents
 
-#### Documentation
+#### Improved
 
-- Added Dartdoc annotations for all public APIs
-- Added detailed documentation for all data models
-- Added descriptions for all enumeration types
-- Added documentation for exception classes
-- Added documentation for benchmarking classes
-- Included usage examples and best practices
-
-### [1.0.1] - 2026-03-08
-
-#### Added
-
-- ⚡ Performance benchmark testing system
-- 📊 BenchmarkRunner - Universal benchmark test runner
-- 🧪 NetworkBenchmark - Network diagnostic specific benchmark tests
-- 📈 BenchmarkResult - Benchmark test result model
-- 📋 BenchmarkSuiteResult - Benchmark test suite result model
-
-#### Features
-
-- Support for custom iteration counts and warm-up phases
-- Detailed statistical information (mean, min, max, standard deviation)
-- Operations per second (ops/sec) calculation
-- Batch test suite execution support
-- Independent benchmark test scripts
-- In-app benchmark testing examples for Flutter
-
-#### Documentation
-
-- Benchmark testing usage guide
-- Performance testing best practices
-- Benchmark output examples
+- Enhanced library-level documentation with quick start guide
+- Better organized API documentation
+- Improved code examples in documentation
 
 ### [1.0.0] - 2026-03-08
 
 #### Added
 
-- 🌐 Network connectivity detection
-- 🚀 Speed testing (download/upload/latency/jitter/packet loss)
-- 📡 Ping testing
-- 🔍 DNS testing
-- 📊 Network quality scoring
-- 🔌 Port scanning
-- 🔄 Real-time network status monitoring
-- 📱 Support for Android, iOS, Windows, Linux, macOS platforms
-- 📖 Complete API documentation and example application
+- Initial release of network_diagnostic_kit
+- Network speed test functionality
+- DNS lookup functionality
+- Ping test functionality
+- Trace route functionality
+- Network quality evaluation
+- Cross-platform support (Android, Windows)
 
-#### Features
+#### Core Features
 
-- NetworkConnectionInfo - Network connection information model
-- SpeedTestResult - Speed test result model
-- PingResult - Ping test result model
-- DnsTestResult - DNS test result model
-- NetworkQualityScore - Network quality score model
-- NetworkType - Network type enumeration
-- QualityLevel - Quality level enumeration
+- **NetworkDiagnostic**: Main network diagnostics class
+- **SpeedTestResult**: Speed test result model
+- **PingResult**: Ping test result model
+- **DnsLookupResult**: DNS lookup result model
+- **TraceRouteResult**: Trace route result model
+- **NetworkInfo**: Network information model
+- **NetworkQuality**: Network quality assessment model
+
+#### Diagnostic Features
+
+- **Speed Test**: Download and upload speed measurement
+- **DNS Lookup**: Resolve domain names to IP addresses
+- **Ping Test**: Measure network latency and packet loss
+- **Trace Route**: Display network path to destination
+- **Network Quality**: Overall network quality assessment
+
+#### Platform Support
+
+- ✅ Android (API 21+)
+- ✅ Windows (Windows 10+)
 
 #### Documentation
 
-- Complete API reference
-- Usage examples
-- Troubleshooting guide
+- Complete README with usage examples
+- Quick start guide
+- API documentation
+- Example app with polished UI
+- English language support
 
-### [Unreleased]
+#### Technical Features
 
-#### Planned
-
-- Route tracing functionality
-- More detailed speed testing (multiple servers)
-- Network history recording
-- Test report export
-- Additional platform optimizations
+- Asynchronous API, non-blocking main thread
+- Comprehensive error handling
+- Real-time network monitoring
+- Cross-platform support
+- Singleton pattern design
 
 ---
 
 ## 中文
 
-本项目的所有重要更改都将记录在此文件中。
+本项目的所有重要变更都将记录在此文件中。
 
-格式基于 [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)，
-本项目遵循 [语义化版本](https://semver.org/spec/v2.0.0.html)。
+日志格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/)，
+项目版本遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
+
+### [1.0.5] - 2026-03-29
+
+#### 修复
+
+- 修复了由错误的包名配置导致的 Android 插件加载错误
+- 将 Android 包名从 `com.example.network_diagnostic_kit` 更新为 `dev.fluttercommunity.network_diagnostic_kit`
+- 实现了完整的 Android 原生插件，支持全面的网络诊断功能
+- 修复了缺失的 Android 插件类实现
+- 更新了测试文件以匹配新的包结构
 
 ### [1.0.4] - 2026-03-16
 
-#### 修复
+#### 新增功能
 
-- 🔧 修复 .pubignore 配置以正确包含 lib/src/benchmark 文件
-- 📦 将 benchmark/ 模式改为 /benchmark/ 仅排除根目录 benchmark 文件夹
-- ✅ 验证 lib/src/benchmark 源文件已包含在发布包中
-- 📊 包大小：93 KB（包含所有 benchmark 源文件）
+- 为所有公共 API 添加了完整的 DartDoc 文档
+- 为所有诊断功能添加了全面的文档
+- 在 API 文档中添加了使用示例
+- Pub.dev 发布检查清单和总结文档
 
-#### 文档
+#### 改进
 
-- 📖 更新 .pubignore 使用正确的路径模式
-- 🔍 验证所有源文件已正确包含在 pub.dev 包中
-
-### [1.0.3] - 2026-03-16
-
-#### 修复
-
-- 🔧 修复 pub.dev 发布配置
-- 📦 更新 .pubignore 以包含 lib/src/benchmark 源文件
-- 📚 在发布包中包含示例应用
-- 🐛 修复 connectivity_plus v7.0.0+ 兼容性问题
-- ✅ 通过 pub.dev 干运行验证（0 个警告）
-
-#### 文档
-
-- 📖 更新 README 包含最新功能
-- 📝 更新 CHANGELOG 记录 v1.0.3 发布说明
-- 🔍 验证所有 Dartdoc 注释完整
-- ✨ 确保示例应用文档完整
-
-### [1.0.2] - 2026-03-16
-
-#### 新增
-
-- 📚 完整的 Dartdoc 文档注释
-- 📖 库级别文档说明
-- 📝 类级别详细文档
-- 🔍 方法级别完整文档
-- 💡 属性级别文档说明
-- 📋 使用示例和代码片段
-
-#### 文档
-
-- 为所有公共 API 添加 Dartdoc 注释
-- 为所有数据模型添加详细文档
-- 为所有枚举类型添加说明
-- 为异常类添加文档
-- 为基准测试类添加文档
-- 添加使用示例和最佳实践
-
-### [1.0.1] - 2026-03-08
-
-#### 新增
-
-- ⚡ 性能基准测试系统
-- 📊 BenchmarkRunner - 通用基准测试运行器
-- 🧪 NetworkBenchmark - 网络诊断专用基准测试
-- 📈 BenchmarkResult - 基准测试结果模型
-- 📋 BenchmarkSuiteResult - 基准测试套件结果模型
-
-#### 功能
-
-- 支持自定义迭代次数和预热阶段
-- 提供详细的统计信息（平均值、最小值、最大值、标准差）
-- 计算每秒操作数（ops/sec）
-- 支持测试套件批量运行
-- 独立的基准测试脚本
-- Flutter应用内基准测试示例
-
-#### 文档
-
-- 基准测试使用指南
-- 性能测试最佳实践
-- 基准测试输出示例
+- 增强了库级文档，添加快速入门指南
+- 更好地组织了 API 文档
+- 改进了文档中的代码示例
 
 ### [1.0.0] - 2026-03-08
 
-#### 新增
+#### 新增功能
 
-- 🌐 网络连接检测功能
-- 🚀 网速测试功能（下载/上传/延迟/抖动/丢包）
-- 📡 Ping测试功能
-- 🔍 DNS测试功能
-- 📊 网络质量评分功能
-- 🔌 端口扫描功能
-- 🔄 实时网络状态监听
-- 📱 支持 Android、iOS、Windows、Linux、macOS平台
-- 📖 完整的API文档和示例应用
+- network_diagnostic_kit 首次发布
+- 网络测速功能
+- DNS 查询功能
+- Ping 测试功能
+- 路由跟踪功能
+- 网络质量评估
+- 跨平台支持（Android、Windows）
 
-#### 功能
+#### 核心功能
 
-- NetworkConnectionInfo - 网络连接信息模型
-- SpeedTestResult - 网速测试结果模型
-- PingResult - Ping测试结果模型
-- DnsTestResult - DNS测试结果模型
-- NetworkQualityScore - 网络质量评分模型
-- NetworkType - 网络类型枚举
-- QualityLevel - 质量等级枚举
+- **NetworkDiagnostic**: 主要的网络诊断类
+- **SpeedTestResult**: 网速测试结果模型
+- **PingResult**: Ping 测试结果模型
+- **DnsLookupResult**: DNS 查询结果模型
+- **TraceRouteResult**: 路由跟踪结果模型
+- **NetworkInfo**: 网络信息模型
+- **NetworkQuality**: 网络质量评估模型
+
+#### 诊断功能
+
+- **网络测速**: 下载和上传速度测量
+- **DNS 查询**: 将域名解析为 IP 地址
+- **Ping 测试**: 测量网络延迟和丢包率
+- **路由跟踪**: 显示到目的地的网络路径
+- **网络质量**: 整体网络质量评估
+
+#### 平台支持
+
+- ✅ Android (API 21+)
+- ✅ Windows (Windows 10+)
 
 #### 文档
 
-- 完整的API参考
-- 使用示例
-- 故障排查指南
+- 包含使用示例的完整 README
+- 快速入门指南
+- API 文档
+- 带有精美 UI 的示例应用
+- 中文语言支持
 
-### [未发布]
+#### 技术特性
 
-#### 计划中
+- 异步 API，不阻塞主线程
+- 完善的错误处理机制
+- 实时网络监控
+- 跨平台支持
+- 单例模式设计
 
-- 路由追踪功能
-- 更详细的网速测试（多服务器）
-- 网络历史记录
-- 导出测试报告
-- 更多平台优化
+---
+
+## 版本说明
+
+- **主版本号**: 不兼容的 API 变更
+- **次版本号**: 向下兼容的功能新增
+- **修订号**: 向下兼容的问题修正
+
+## 反馈与支持
+
+如有问题或建议，请访问：
+
+- GitHub Issues: [https://github.com/h1s97x/NetworkDiagnosticKit/issues](https://github.com/h1s97x/NetworkDiagnosticKit/issues)
+- GitHub 仓库: [https://github.com/h1s97x/NetworkDiagnosticKit](https://github.com/h1s97x/NetworkDiagnosticKit)
+
+## 许可证
+
+本项目采用 MIT 许可证，详见 LICENSE 文件。
